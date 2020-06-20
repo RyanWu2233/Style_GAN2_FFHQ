@@ -7,8 +7,9 @@
 Tensorflow 2.1 implementation for Nvidia style GAN2
 
 ----
-## Style GAN2:  
+## Style GAN2 Implementation:  
 
+![GD network](./Images/SG2_network.jpg) 
 ----
 ## Reference:
 > **Progressive Growing of GANs for Improved Quality, Stability, and Variation**  
