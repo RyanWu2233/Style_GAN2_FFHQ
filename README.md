@@ -9,8 +9,9 @@ Tensorflow 2.1 implementation for Nvidia style GAN2
 ----
 ## Style GAN2 Implementation  
   
-Style GAN2 paper do vast body of works to compare the performance for different network (original, skip connection, residual network). Generator with skip connection and discriminator with residul network together achieve best FID and PPL performance.
-![GD network](./Images/SG2_network.jpg) 
+Style GAN2 paper do vast body of works to compare the performance for different network (original, skip connection, residual network). Generator with skip connection and discriminator with residul network together achieve best FID and PPL performance.  
+![GD network](./Images/SG2_network.jpg)  
+
 ----
 ## Reference:
 > **Progressive Growing of GANs for Improved Quality, Stability, and Variation**  
