@@ -15,7 +15,7 @@ Tensorflow 2.1 implementation for Nvidia style GAN2
 > [PDF] https://arxiv.org/abs/1710.10196 [CODE]  
 >
 > **A Style-Based Generator Architecture for Generative Adversarial Networks**  
-> (Style-GAN)  
+> (Style-GAN) 
 > Tero Karras, Samuli Laine, Timo Aila  
 > [PDF] https://arxiv.org/abs/1812.04948 [CODE]  
 >
@@ -23,6 +23,20 @@ Tensorflow 2.1 implementation for Nvidia style GAN2
 > (Style GAN2)
 > Tero Karras, Samuli Laine, Miika Aittala, Janne Hellsten, Jaakko Lehtinen, Timo Aila  
 > [PDF] https://arxiv.org/abs/1912.04958 
+
+----
+## Usage:  
+
+----
+## Hyperparameter settings:  
+
+----
+## More results:
+
+
+
+
+
 
 
 
