@@ -18,7 +18,7 @@ Tensorflow 2.1 implementation for Nvidia style GAN2
 >![GD network](./Images/SG2_network.jpg)  
 
 ### Function not implemented in this code
-> The training runs on single Nvidia RTX2080-Ti GPU. Resource is limited and some optimization is employed to make the training reasonable.  
+> The training runs on single Nvidia RTX2080-Ti GPU. To make the training practical, some optimization is employed:    
 > (1) Capacity of generator and discriminator is 4X smaller  
 > (2) Image resolution is reduced to 512 x 512  
 > (3) Equalization learning rate function is not implemented  
