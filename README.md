@@ -7,9 +7,9 @@
 Tensorflow 2.1 implementation for Nvidia style GAN2
 ![Result_A1](./Images/SG2_result_A1.jpg)  
 ![Result_A2](./Images/SG2_result_A2.jpg)  
-![Result_B1](./Images/SG2_result_B1.jpg)  
-![Result_B2](./Images/SG2_result_B2.jpg)  
-![Result_B3](./Images/SG2_result_B3.jpg)  
+X![Result_B1](./Images/SG2_result_B1.jpg)  
+X![Result_B2](./Images/SG2_result_B2.jpg)  
+X![Result_B3](./Images/SG2_result_B3.jpg)  
 
 ----
 ## Style GAN2 Implementation  
