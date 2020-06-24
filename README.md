@@ -14,10 +14,19 @@ Tensorflow 2.1 implementation for Nvidia style GAN2
 ## Style GAN2 Implementation  
   
 ### Generator and discriminator network  
-Style GAN2 paper did vast body of works to compare the performance for different network (original, skip connection, residual network). Generator with skip connection and discriminator with residul network together achieve best FID and PPL performance.  
-![GD network](./Images/SG2_network.jpg)  
+>Style GAN2 paper did vast body of works to compare the performance for different network (original, skip connection, residual network). Generator with skip connection and discriminator with residul network together achieve best FID and PPL performance.  
+>![GD network](./Images/SG2_network.jpg)  
 
 ### Function not implemented in this code
+> The training runs on single Nvidia RTX2080-Ti GPU. Resource is limited and some optimization is employed to make the training reasonable.
+> (1) Capacity of generator and discriminator is 4X smaller
+> (2) Image resolution is reduced to 512 x 512
+> (3) Equalization learning rate function is not implemented
+> (4) Perceptual path length regularization is not implemented
+> (5) Lazy regularization is not implemented
+
+
+
 
 ----
 ## Reference:
