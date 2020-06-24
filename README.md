@@ -5,17 +5,19 @@
 ![Image size 512](https://img.shields.io/badge/Image_size-512x512-green.svg?style=plastic)  
 
 Tensorflow 2.1 implementation for Nvidia style GAN2
-![Result_A1](./Images/SG2_result_A1.jpg)  
-![Result_A2](./Images/SG2_result_A2.jpg)  
-X![Result_B1](./Images/SG2_result_B1.jpg)  
-X![Result_B2](./Images/SG2_result_B2.jpg)  
-X![Result_B3](./Images/SG2_result_B3.jpg)  
+[Result_A1](./Images/SG2_result_A1.jpg)  
+[Result_A2](./Images/SG2_result_A2.jpg)  
+[Result_B1](./Images/SG2_result_B1.jpg)  
+
 
 ----
 ## Style GAN2 Implementation  
   
+### Generator and discriminator network  
 Style GAN2 paper did vast body of works to compare the performance for different network (original, skip connection, residual network). Generator with skip connection and discriminator with residul network together achieve best FID and PPL performance.  
 ![GD network](./Images/SG2_network.jpg)  
+
+### Function not implemented in this code
 
 ----
 ## Reference:
@@ -42,7 +44,8 @@ Style GAN2 paper did vast body of works to compare the performance for different
 
 ----
 ## More results:
-
+[Result_B2](./Images/SG2_result_B2.jpg)  
+[Result_B3](./Images/SG2_result_B3.jpg)  
 
 
 
