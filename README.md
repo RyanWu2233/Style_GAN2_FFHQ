@@ -44,12 +44,12 @@ Tensorflow 2.1 implementation for Nvidia style GAN2
 > **Progressive Growing of GANs for Improved Quality, Stability, and Variation**  
 > (PG-GAN)
 > Tero Karras, Timo Aila, Samuli Laine, Jaakko Lehtinen  
-> [PDF] https://arxiv.org/abs/1710.10196 [CODE]  
+> [PDF] https://arxiv.org/abs/1710.10196  
 >
 > **A Style-Based Generator Architecture for Generative Adversarial Networks**  
 > (Style-GAN) 
 > Tero Karras, Samuli Laine, Timo Aila  
-> [PDF] https://arxiv.org/abs/1812.04948 [CODE]  
+> [PDF] https://arxiv.org/abs/1812.04948  
 >
 > **Analyzing and Improving the Image Quality of StyleGAN**  
 > (Style GAN2)
