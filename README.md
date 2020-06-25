@@ -58,7 +58,14 @@ Tensorflow 2.1 implementation for Nvidia style GAN2
 
 ----
 ## Usage:  
- 
+Execute or include file named `SG2_main.pu`. Then execute following instruction:  
+> `model = GAN()` Create style GAN2 object  
+> `model.train(restart=False)` Train model
+> `model.predict(24)` Generate fake image with 4 rows and 6 cols  
+> `model.predict(6)` Generate fake image with 2 rows and 3 cols  
+> `model.predict(2)` Generate fake image with 1 rows and 2 cols  
+> `model.save_weights()` Save model 
+> `mdoel.load_weights()` Load model
 
 ----
 ## More results:
