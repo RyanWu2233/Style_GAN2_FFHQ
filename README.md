@@ -12,9 +12,15 @@ Tensorflow 2.1 implementation for Nvidia style GAN2
 
 ----
 ## Style GAN2 Implementation  
-  
+The style based GAN (Style GAN) yields of SOTA (state of the art) performance. Nvidia further improved the image quality by removing normalization artifacts using weight demodulation. It also fixed the artifact due to progessive growing GAN (PG-GAN). It finally propose the PPL (perceptual path length) regularization to further improve iamge quality.  
+### Revised AdaIN (Adaptive Instance Normalization) and weight demodulation 
+> Following iamge illustrates the blob artifact due to style GAN1. Root case is the AdaIN modulates both bias and standard deviation simultaneously. 
+
+![Normalize_Artifact1](./Images/SG2_Artificial_1.jpg) 
+![Normalize_Artifact2](./Images/SG2_Artificial_2.jpg) 
+
 ### Generator and discriminator network  
->Style GAN2 paper did vast body of works to compare the performance for different network (original, skip connection, residual network). Generator with skip connection and discriminator with residul network together achieve best FID and PPL performance.  
+> Style GAN2 paper did vast body of works to compare the performance for different network (original, skip connection, residual network). Generator with skip connection and discriminator with residul network together achieve best FID and PPL performance.  
 >![GD network](./Images/SG2_network.jpg)  
 
 ### Hyperparameter settings:  
