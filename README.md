@@ -23,30 +23,11 @@ In order to fix this problem, NVIDIA reserves variance modulation and remove bia
 ![Normalize_Artifact2](./Images/SG2_Artificial_2.jpg) 
 
 ### Phase artifacts due to progressive growing GAN  
-> PG-GAN has been very successfully in stabilizing high-resolution image synthesis, but it causes its own characteristic atifacts. It appears to have strong location preference for details; 
-
+> PG-GAN has been very successfully in stabilizing high-resolution image synthesis, but it causes its own characteristic atifacts. It appears to have strong location preference for details. Figure below illustrates that tooth remain unchanged when head rotates. NVIDIA believes this bug comes from progressive growing strategy. They fixed this issue by using MSG-GAN alike network.  
 >![SG2_Artificial_3](./Images/SG2_Artificial_3.jpg)  
-
-Progressive growing [23] has been very successful in stabilizing
-high-resolution image synthesis, but it causes its
-own characteristic artifacts. The key issue is that the progressively
-grown generator appears to have a strong location
-preference for details; the accompanying video shows that
-when features like teeth or eyes should move smoothly over
-the image, they may instead remain stuck in place before
-jumping to the next preferred location. Figure 6 shows a related
-artifact. We believe the problem is that in progressive
-growing each resolution serves momentarily as the output
-resolution, forcing it to generate maximal frequency details,
-which then leads to the trained network to have excessively
-high frequencies in the intermediate layers, compromising
-shift invariance
-
 ### Generator and discriminator network  
 > Style GAN2 paper did vast body of works to compare the performance for different network (original, skip connection, residual network). Generator with skip connection and discriminator with residul network together achieve best FID and PPL performance.  
 >![GD network](./Images/SG2_network.jpg)  
-
-
 
 ### Hyperparameter settings:  
 > The hyperparameters for training are:  
@@ -99,11 +80,6 @@ Execute or include file named `SG2_main.pu`. Then execute following instruction:
 > `mdoel.load_weights()` Load model  
 
 ---- 
-
-
-
-
-
 
 
 
