@@ -4,7 +4,7 @@
 ![Repo FFHQ](https://img.shields.io/badge/Repository-FFHQ-green.svg?style=plastic)
 ![Image size 512](https://img.shields.io/badge/Image_size-512x512-green.svg?style=plastic)  
 
-Tensorflow 2.1 implementation for Nvidia style GAN2  
+Tensorflow 2.1 implementation for NVIDIA style GAN2  
 [Result_A1](./Images/SG2_result_A1.jpg)  
 [Result_A2](./Images/SG2_result_A2.jpg)  
 [Result_B1](./Images/SG2_result_B1.jpg)  
@@ -12,11 +12,13 @@ Tensorflow 2.1 implementation for Nvidia style GAN2
 
 ----
 ## Style GAN2 Implementation  
-The style based GAN (Style GAN) yields of SOTA (state of the art) performance. Nvidia further improved the image quality by removing normalization artifacts using weight demodulation. It also fixed the artifact due to progessive growing GAN (PG-GAN). It finally propose the PPL (perceptual path length) regularization to further improve iamge quality.  
-### Revised AdaIN (Adaptive Instance Normalization) and weight demodulation 
-> Following iamge illustrates the blob artifact due to style GAN1. Root case is the AdaIN modulates both bias and standard deviation simultaneously. 
-
+Style GAN2 is proposed by NVIDIA and breakthrough than previous SOTA style GAN. It further improves generator image quality by using weight demodulation instead of AdaIN. It further improve latent space smoothness by PPL (perceptual path length) regularization.  
+  
+### Revised AdaIN (Adaptive Instance Normalization) and weight demodulation  
+> NVIDIA found Style GAN illustrates blob-like artifacts (see images below). The generator create them to circumvent infomation past AdaIN: by creating a strong, localized spike that dominates the statistics to scale the scale as it likes elsewhere.  
 ![Normalize_Artifact1](./Images/SG2_Artificial_1.jpg) 
+In order to fix this problem, NVIDIA reserves variance modulation and remove bias modulation of AdaIN. By proper mathmatical derivation, the revised network can be treated as weight demodulation. This modification successfully removed blob-like artifacts in Style GAN.  
+![SF2_weight_demod](./Images/SG2_weight_demod.jpg)  
 ![Normalize_Artifact2](./Images/SG2_Artificial_2.jpg) 
 
 ### Generator and discriminator network  
@@ -35,7 +37,7 @@ The style based GAN (Style GAN) yields of SOTA (state of the art) performance. N
 > Train images: 12000K images  
 
 ### Function not implemented in this code
-> The training runs on single Nvidia RTX2080-Ti GPU. To make the training practical, some optimization is employed:    
+> The training runs on single NVIDIA RTX2080-Ti GPU. To make the training practical, some optimization is employed:    
 > (1) Capacity of generator and discriminator is 4X smaller  
 > (2) Image resolution is reduced to 512 x 512  
 > (3) Equalization learning rate function is not implemented  
