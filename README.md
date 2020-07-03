@@ -5,6 +5,8 @@
 ![Image size 512](https://img.shields.io/badge/Image_size-512x512-green.svg?style=plastic)  
 
 Tensorflow 2.1 implementation for NVIDIA style GAN2  
+
+## This human are not exist!
 ![Result_A1](./Images/SG2_result_A1.jpg)  
 ![Result_A2](./Images/SG2_result_A2.jpg)  
 ![Result_B1](./Images/SG2_result_B1.jpg)  
