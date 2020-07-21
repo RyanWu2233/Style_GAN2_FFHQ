@@ -16,6 +16,8 @@ Tensorflow 2.1 implementation for NVIDIA style GAN2
 ----
 ## Style GAN2 Implementation  
 Style GAN2 is proposed by NVIDIA and breakthrough than previous SOTA style GAN. It further improves generator image quality by using weight demodulation instead of AdaIN. It further improve latent space smoothness by PPL (perceptual path length) regularization.  
+
+![Training](./Images/FFHQ_train.gif)    
   
 ### Revised AdaIN (Adaptive Instance Normalization) and weight demodulation  
 > NVIDIA found Style GAN illustrates blob-like artifacts (see images below). The generator create them to circumvent infomation past AdaIN: by creating a strong, localized spike that dominates the statistics to scale the scale as it likes elsewhere.  
